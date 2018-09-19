@@ -1,7 +1,7 @@
 # PROGRESS-4GL
 
 ## Variaveis
-```progress
+```Progress OpenEdge
 /*Declaração de variaveis*/
 DEFINE VARIABLE c AS CHARACTER   NO-UNDO.
 DEFINE VARIABLE i AS INTEGER     NO-UNDO.
@@ -10,7 +10,7 @@ DEFINE VARIABLE l AS LOGICAL     NO-UNDO.
 ```
 
 ## Laços de Repetição
-```progress
+```ABL
 DO i = 1 TO 12:
   month-quota[i] = 0.
 END. 
@@ -39,6 +39,8 @@ DEFINE VARIABLE i AS INTEGER     NO-UNDO.
 DEFINE VARIABLE d AS DECIMAL     NO-UNDO.
 DEFINE VARIABLE l AS LOGICAL     NO-UNDO.
 ```
+
+## Condicionais
 ```progress
 IF condition THEN expression1 ELSE expression2 
 
