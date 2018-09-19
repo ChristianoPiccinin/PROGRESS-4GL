@@ -33,11 +33,20 @@ END.
 
 ## Temp-tables
 ```progress
-/*Declaração de variaveis*/
-DEFINE VARIABLE c AS CHARACTER   NO-UNDO.
-DEFINE VARIABLE i AS INTEGER     NO-UNDO.
-DEFINE VARIABLE d AS DECIMAL     NO-UNDO.
-DEFINE VARIABLE l AS LOGICAL     NO-UNDO.
+
+DEFINE TEMP-TABLE ttCallParam NO-UNDO 
+    FIELD iParamNo       AS INTEGER 
+    FIELD cParamName     AS CHARACTER 
+    FIELD cDataType      AS CHARACTER 
+    FIELD cIOMode        AS CHARACTER 
+    FIELD cCharacter     AS CHARACTER 
+    FIELD tDate          AS DATE 
+    FIELD lLogical       AS LOGICAL 
+    FIELD iInteger       AS INTEGER 
+    FIELD dDecimal       AS DECIMAL 
+    INDEX pudx IS UNIQUE PRIMARY 
+      iParamNo. 
+
 ```
 
 ## Condicionais
